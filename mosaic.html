@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="mosaic">
+  <head>
+    <title>Mosaic</title>
+
+    <script type="text/javascript" src="js/angular.js"></script> 
+    <script type="text/javascript" src="js/client.js"></script>    
+    <script type="text/javascript" src="js/mosaic.factory.js"></script>
+    <script type="text/javascript" src="js/mosaic.controller.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body ng-controller="mosaicController as vm" ng-init="vm.init()">
+    <div class="container">            
+      <input  id="input" 
+              type="file" 
+              ng-model="vm.imageName" 
+              accept="image/*" />                    
+    </div> 
+    <br/>
+    <p id="loadingTxt" ng-if="vm.isLoading === true">Loading...</p>
+    <div id="svgHolder"></div>
+  </body>
+</html>

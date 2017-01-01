@@ -1,0 +1,17 @@
+#loadingTxt{
+        font-weight: bold;
+        font-family: 'Times New Roman', Georgia, Serif;
+        color:#16a085;
+        font-size:42px;
+        -webkit-animation-name: opacity;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: opacity;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;        
+}
+
+@-webkit-keyframes opacity {
+    0%, 100% {opacity:0;}
+    50% {opacity:1;}
+}
